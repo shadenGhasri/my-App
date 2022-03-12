@@ -2,11 +2,10 @@ const btnJoke = document.querySelector(".btn-joke")
 const pJoke = document.querySelector(".p-joke")
 
 const createJoke = async ()=>{
+  
     const res =await getData()
     console.log(res)
     pJoke.textContent =    `${res}`
-    pJoke.classList.add("li-joke")
-
 
 }
 const getData = async ()=>{
