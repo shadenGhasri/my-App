@@ -24,7 +24,5 @@ const getData = async () => {
 
 btnJoke.addEventListener("click", createJoke)
 
-
-
-
+// right click
 
