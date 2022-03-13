@@ -1,20 +1,20 @@
 const btnJoke = document.querySelector(".btn-joke")
 const pJoke = document.querySelector(".p-joke")
 
-const createJoke = async ()=>{
-  
-    const res =await getData()
+const createJoke = async () => {
+
+    const res = await getData()
     console.log(res)
-    pJoke.textContent =    `${res}`
+    pJoke.textContent = `${res}`
 
 }
-const getData = async ()=>{
-    try{
-        const config = {headers:{Accept :"application/json"}}
-        const response = await axios.get("https://icanhazdadjoke.com/",config)
+const getData = async () => {
+    try {
+        const config = { headers: { Accept: "application/json" } }
+        const response = await axios.get("https://icanhazdadjoke.com/", config)
         return response.data.joke
-        
-    }catch(error){
+
+    } catch (error) {
         console.error(error)
     }
 }
@@ -22,7 +22,7 @@ const getData = async ()=>{
 
 
 
-btnJoke.addEventListener("click",createJoke)
+btnJoke.addEventListener("click", createJoke)
 
 
 
