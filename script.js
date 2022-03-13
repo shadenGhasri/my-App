@@ -28,6 +28,18 @@ btnJoke.addEventListener("click", createJoke)
 const contextMenu = document.querySelector(".context-menu")
 
 document.body.addEventListener('contextmenu', e =>{
-    e.preventDefault()
+    e.preventDefault();
+    if(contextMenu.classList.contains("display-none")){
+        contextMenu.style.display = "block";
+        contextMenu.style.left = e.pageX + "px"
+        contextMenu.style.top = e.pageY + "px"
+    }else{
+        contextMenu.style.left = e.pageX + "px"
+        contextMenu.style.top = e.pageY + "px"
+        
+    }
 })
 
+document.body.addEventListener("click",()=>{
+    contextMenu.style.display = "none";
+})

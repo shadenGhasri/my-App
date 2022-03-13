@@ -36,7 +36,9 @@ ul {
   list-style: none;
 }
 .context-menu { 
-  position: absolute; 
+  position: absolute;  
+}
+.display-none{
   display: none;
 } 
 .menu {
