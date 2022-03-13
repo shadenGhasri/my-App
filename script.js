@@ -25,4 +25,9 @@ const getData = async () => {
 btnJoke.addEventListener("click", createJoke)
 
 // right click
+const contextMenu = document.querySelector(".context-menu")
+
+document.body.addEventListener('contextmenu', e =>{
+    e.preventDefault()
+})
 

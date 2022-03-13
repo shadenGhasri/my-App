@@ -31,11 +31,13 @@
 }
 
 /* right click */
+
 ul {
   list-style: none;
 }
 .context-menu { 
   position: absolute; 
+  display: none;
 } 
 .menu {
   display: flex;
@@ -53,7 +55,7 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
-  text-decoration: unset;
+  text-decoration: none;
   color: #000;
   font-weight: 500;
   transition: 0.5s linear;
