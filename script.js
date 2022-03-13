@@ -43,3 +43,4 @@ document.body.addEventListener('contextmenu', e =>{
 document.body.addEventListener("click",()=>{
     contextMenu.style.display = "none";
 })
+
