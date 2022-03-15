@@ -45,28 +45,4 @@ document.body.addEventListener("click",()=>{
 })
 
 // weather
-const btnWeather = document.querySelector(".btn-weather")
-const textWeather = document.querySelector(".text-weather")
-// btnWeather.addEventListener("click", async() =>{
-//     letresponse =
-// })
 
-const weather = async () => {
-
-    const res = await getDataWeather()
-    console.log(res)
-    textWeather.textContent = `${res}`
-
-}
-const getDataWeather = async () => {
-    try {
-        // const config = { headers: { Accept: "application/json" } }
-        const response = await axios.get("http://ip-api.com/json/?fields=status,country,city,lat,lon,timezone")
-        console.log(response);
-        return response.data
-
-    } catch (error) {
-        console.error(error)
-    }
-}
-getDataWeather()
