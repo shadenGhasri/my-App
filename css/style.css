@@ -84,9 +84,10 @@ ul {
   margin: auto;
   border-radius: 2rem;
   background-color: rgb(168, 137, 199);
+
 }
 .input-weather{
-  width: 300px;
+  width: 400px;
   height: 40px;
   border-radius: 40px;
 }
