@@ -44,7 +44,7 @@ let weather = {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
-        "&appid=" +
+        "&units=metric&appid=" +
         this.apiKey
     )
       .then((res) => res.json())
@@ -56,10 +56,15 @@ let weather = {
     const {temp,humidity} = data.main;
     const {speed} = data.wind;
     console.log(name,icon,description,temp,humidity,speed);
-
+    document.querySelector(".city").textContent =   `Weather in ${name}`
+    document.querySelector(".temp").textContent =   `${temp}°C`
+    // document.querySelector(".icon-weather").src =   `https://openweathermap.org/img/wn/${icon}&2x.png`
+    document.querySelector(".description").textContent =  `${description}`
+    document.querySelector(".humidity").textContent =  `humidity: ${humidity}%`
+    document.querySelector(".wind").textContent =   `wind speed: ${speed} km`
   }
 };
-weather.fetchWeather("denver");
+weather.fetchWeather("tehran");
 
 
 
