@@ -94,9 +94,9 @@ ul {
   font-weight: 300;
   font-family: 'Fredoka', sans-serif;
   width: 700px;
-  height: 400px;
+  height: 500px;
   border-radius: 30px;
-  background-color: rgba(134, 83, 158, 0.3);
+  background-color: rgba(138, 98, 156, 0.3);
 }
 .input-weather{
   width: 400px;
@@ -116,4 +116,7 @@ ul {
   outline: none;
   cursor: pointer;
   background-color: #ffffff;
+}
+.icon-weather{
+  height: 80px;
 }
