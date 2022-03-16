@@ -38,6 +38,9 @@ document.body.addEventListener("click", () => {
 });
 
 // weather
+const inputWeather = document.querySelector(".input-weather")
+const btnWeather = document.querySelector(".btn-weather")
+
 let weather = {
   apiKey: "81c34be7f0ea904f85507d2cea19abb9",
   fetchWeather: function (city) {
@@ -64,7 +67,13 @@ let weather = {
     document.querySelector(".wind").textContent =   `wind speed: ${speed} km`
   }
 };
-weather.fetchWeather("tehran");
+
+const getValue= ()=>{
+    const inputValue = inputWeather.value ;
+    weather.fetchWeather(inputValue);   
+}
+btnWeather.addEventListener("click",getValue)
+
 
 
 
