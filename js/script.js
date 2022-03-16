@@ -45,4 +45,13 @@ document.body.addEventListener("click",()=>{
 })
 
 // weather
+let weather = {
+    api : "81c34be7f0ea904f85507d2cea19abb9" ,
+    fetchWeather : function (){
+        fetch("https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=81c34be7f0ea904f85507d2cea19abb9")
+        .then(res => res.json())
+        .then(data => console.log(data))
+    }
 
+}
+weather.fetchWeather()
