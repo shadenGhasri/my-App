@@ -82,7 +82,7 @@ ul {
   width:1200px ;
   height:600px ;
   margin: auto;
-  background-image: url("https://source.unsplash.com/random/1200x500/?landscape");
+  background-image: url("https://source.unsplash.com/random/1200x600/?landscape");
   border-radius: 30px ;
 }
 .weather-details{
