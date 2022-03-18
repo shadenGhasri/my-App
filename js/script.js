@@ -38,15 +38,6 @@ document.body.addEventListener("click", () => {
 });
 
 
-// coinRanking
-
-// const url = "https://api.coinranking.com/v2/coins ";
-// const proxyUrl = "https://cors-anywhere.herokuapp.com";
-// const apiKey = "coinranking6c84b571d6f3282806d07ea870a922c9059a34ce6de4d989";
-
-
-
-
 
 
 
