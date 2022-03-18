@@ -13,18 +13,17 @@
   width: 100%;
   max-width: 900px;
   /* background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%); */
-  background: #ef32d9; 
+  background: #f4c4f3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #89fffd,
-    #ef32d9
-  ); 
+    #fc67fa,
+    #f4c4f3
+  );
   background: linear-gradient(
     to right,
-    #89fffd,
-    #ef32d9
-  ); 
-}
+    #fc67fa,
+    #f4c4f3
+  );
 .h1-text {
   font-family: "Fredoka", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
