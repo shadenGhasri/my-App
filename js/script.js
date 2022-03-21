@@ -63,7 +63,12 @@ deleteBtn.addEventListener("click",(e)=>{
 })
 
 equals.addEventListener("click",()=>{
-  outPut.value = eval(outPut.value)
+  if(outPut.value){
+    outPut.value = eval(outPut.value)
+  }else{
+    outPut.value = ""
+  }
+  
 })
 
 
