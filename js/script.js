@@ -45,6 +45,7 @@ const allBtn = document.querySelectorAll(".data")
 const outPut = document.querySelector(".output-text")
 const clear = document.querySelector(".clear")
 
+
 for(let btn of allBtn){
   btn.addEventListener("click",()=>{
     outPut.value += btn.value
