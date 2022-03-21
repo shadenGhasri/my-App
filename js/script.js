@@ -45,7 +45,7 @@ const allBtn = document.querySelectorAll(".data")
 const outPut = document.querySelector(".output-text")
 const clear = document.querySelector(".clear")
 const deleteBtn = document.querySelector(".delete")
-
+const equals = document.querySelector(".equals")
 
 for(let btn of allBtn){
   btn.addEventListener("click",()=>{
@@ -55,16 +55,16 @@ for(let btn of allBtn){
 
 clear.addEventListener("click",(e)=>{
   outPut.value = ""
-  console.log(outPut.value);
 })
 
 deleteBtn.addEventListener("click",(e)=>{
-  let outPutValue = outPut.value ;
-  outPut.value = outPutValue.slice(0,-1)
+  outPut.value = outPut.value.slice(0,-1)
   
 })
 
-
+equals.addEventListener("click",()=>{
+  outPut.value = eval(outPut.value)
+})
 
 
 
