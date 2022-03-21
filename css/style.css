@@ -23,7 +23,8 @@
     to right,
     #fc67fa,
     #f4c4f3
-  );
+  ); 
+}
 .h1-text {
   font-family: "Fredoka", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
@@ -145,7 +146,7 @@ ul {
   background: linear-gradient(315deg, pink, #fc737c);
 }
 
-.output {
+.output{
   grid-column: 1/ -1;
   box-shadow: inset -2px -2px 10px #f17171;
   display: flex;
@@ -158,7 +159,16 @@ ul {
   border-radius: 30px;
   margin: 35px 0 30px 0;
 }
-.output .previous {
+
+.output-text{
+  border:none;
+  width: 240px ;
+  height:70px ;
+  box-shadow: inset -2px -2px 10px #f17171;
+
+}
+
+/* .output .previous {
   color: rgb(255, 255, 255, 0.7);
   font-size: 20px;
   margin-top: 10px;
@@ -168,7 +178,7 @@ ul {
   color: #fff;
   font-size: 25px;
   margin: 5px 0;
-}
+} */
 
 /* weather */
 .weather-box {
