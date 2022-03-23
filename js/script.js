@@ -18,6 +18,8 @@ const getData = async () => {
 btnJoke.addEventListener("click", alert('Please turn off your VPN'));
 btnJoke.addEventListener("click", createJoke);
 
+
+
 // right click
 const contextMenu = document.querySelector(".context-menu");
 
